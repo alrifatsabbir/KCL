@@ -125,7 +125,13 @@ td {
     font-family: sans-serif;
     letter-spacing: -4px;
 }
-.eqn{
+.eqn, .fig{
     justify-self: center;
     font-family: sans-serif;
+}
+.fig figcaption{
+    justify-self: center;
+}
+.imgs{
+    justify-self: center;
 }

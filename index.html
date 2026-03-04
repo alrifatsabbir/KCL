@@ -18,6 +18,7 @@
             <li><a href="#objective">Objective</a></li>
             <li><a href="#equipments">Equipments</a></li>
             <li><a href="#theory">Theory</a></li>
+            <li><a href="#circuit-diagram">Circuit Diagram</a></li>
         </ul>
     </aside>
     <h1 class="title-head" id="home">Assignment-02</h1>
@@ -90,12 +91,36 @@
                 <span class="subscript">I<sub>1</sub>+</span><span class="subscript">I<sub>4</sub></span>-<span class="subscript">I<sub>2</sub></span>-
                 <span class="subscript">I<sub>3</sub></span>-<span class="subscript">I<sub>5</sub></span>= 0
             </p>
+            <br>
+            <br>
+            <figure class="fig">
+                <canvas id="kclCanvas" width="400" height="300"></canvas>
+                <figcaption>
+                    Fig-4.1: kirchhoff's Current Law (KCL)
+                </figcaption>
+            </figure>
+            <br>
             <p>
                 So, the algebraic sum of all currents at a node is 0;
                 <p class="eqn">
                     &sum;I = 0;
                 </p>
             </p>
+        </div>
+        <br>
+        <div class="circuit-diagram para-size" id="circuit-diagram">
+            <span class="bold">Circuit Diagram: </span>
+            <br><br>
+            <figure class="fig">
+                <img src="./assets/circuit.png" alt="circuit-1" height="300px" width="560px">
+                <figcaption>
+                    Fig-4.2: Circuit Diagram - Parallel Circuit (5v)
+                </figcaption>
+                <img src="./assets/circuit2.png" alt="circuit-2" height="300px" width="560px">
+                <figcaption>
+                    Fig-4.3: Circuit Diagram - Parallel Circuit (10v)
+                </figcaption>
+            </figure>
         </div>
     </section>
     <script src="index.js"></script>
