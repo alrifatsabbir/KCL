@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-02</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <button class="sidebar-btn" id="sidebarToggle">
+        |||
+    </button>
+    <aside class="sidebar" id="sidebar">
+        <button class="sidebar-close" id="sidebarClose">✕</button>
+        <h3>Menu</h3>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#objective">Objective</a></li>
+            <li><a href="#equipments">Equipments</a></li>
+            <li><a href="#theory">Theory</a></li>
+        </ul>
+    </aside>
+    <h1 class="title-head" id="home">Assignment-02</h1>
+    <section class="pos">
+        <h2 class="title-name">
+            <span class="bold">
+                Name of the Experiment:
+            </span>
+            Verification of kirchhoff's Current Law (KCL)
+        </h2>
+        <br>
+        <div class="objective para-size" id="objective">
+            <span class="bold">
+                Objective:
+            </span>
+            The primary objective of this experiment is to verify kirchhoff's Current Law (KCL) in DC Circuit.
+        </div>
+        <br>
+        <div class="equipments para-size" id="equipments">
+            <span class="bold">Equipments: </span>
+            <br><br>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Elements</th>
+                        <th scope="col">Unit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1. Trainer Board</th>
+                        <td>1 Piece</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2. DC Voltage Supply</th>
+                      <td>1 Unit</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3. Resistors</th>
+                      <td>3 Piece</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4. Multimeter</th>
+                      <td>1 Piece</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5. Wires</th>
+                      <td>As Required</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <div class="theory para-size" id="theory">
+            <span class="bold">Theory: </span>
+            <p>
+                kirchhoff's Current Law (KCL) is based on the principle of conservation of charge which states that electric charge can nether be 
+                created nor destroyed. In any electrical circuit, the amount of charge entering a node must be equal to the amount of charge 
+                leaving that node. Mathematically, the net current entering a node is equal to the net current leaving it. For a node 'M', if 
+                <span class="subscript">I<sub>1</sub></span>and <span class="subscript">I<sub>4</sub></span>are entering and 
+                <span class="subscript">I<sub>2</sub></span>,<span class="subscript">I<sub>3</sub></span>and<span class="subscript">I<sub>5</sub></span>
+                is leaving. Then,
+            </p>
+            <br>
+            <p class="eqn">
+                <span class="subscript">I<sub>1</sub>+</span><span class="subscript">I<sub>4</sub></span>=<span class="subscript">I<sub>2</sub></span>+
+                <span class="subscript">I<sub>3</sub></span>+<span class="subscript">I<sub>5</sub></span>
+                <br>
+                =>
+                <span class="subscript">I<sub>1</sub>+</span><span class="subscript">I<sub>4</sub></span>-<span class="subscript">I<sub>2</sub></span>-
+                <span class="subscript">I<sub>3</sub></span>-<span class="subscript">I<sub>5</sub></span>= 0
+            </p>
+            <p>
+                So, the algebraic sum of all currents at a node is 0;
+                <p class="eqn">
+                    &sum;I = 0;
+                </p>
+            </p>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>

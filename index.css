@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+*{
+    margin: 5px;
+    box-sizing: border-box;
+    font-family: "Geist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body{
+    margin: 20px 0 0 25px;
+    background-color: #f7e7ce;
+    color: #102c26;
+}
+.sidebar-btn{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background-color: #102c26;
+    color: #f7e7ce;
+    padding: 20px 12px;
+    rotate: 90deg;
+    font-weight: 900;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.5s linear;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    z-index: 999;
+}
+.sidebar-btn:hover{
+    border: 1px solid #f7e7ce;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: -320px;
+    width: 300px;
+    height: 100vh;
+    background-color: #102c26;
+    color: #f7e7ce;
+    padding: 20px;
+    transition: right 0.5s ease;
+    z-index: 1000;
+    box-shadow: -5px 0 15px #0000004d;
+}
+.sidebar.active{
+    right: 0;
+}
+.sidebar-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: #f7e7ce;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+.sidebar-close:hover{
+    transform: scale(1.2);
+}
+.sidebar h3{
+    margin-top: 30px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li{
+    margin: 15px 0;
+}
+.sidebar ul li a{
+    color: #f7e7ce;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.sidebar ul li a:hover{
+    color: #f7e7ce;
+    padding-left: 10px;
+    border-left: 3px solid #f7e7ce;
+}
+.pos{
+    width: 70dvw;
+}
+.title-head{
+    font-size: 3xl;
+    
+}
+.title-name{
+    font-size: xl;
+}
+.bold{
+    color: #070e4b;
+    border-bottom: 3px double #070e4b;
+}
+.para-size{
+    font-size: 16px;
+    font-weight: 600;
+}
+table {
+    position: relative;
+    left: 10%;
+    border-collapse: collapse;
+    border: 2px solid #102c26;
+    letter-spacing: 1px;
+}
+th,
+td {
+    border: 1px solid #102c26;
+    padding: 8px 10px;
+}
+.subscript{
+    font-family: sans-serif;
+    letter-spacing: -4px;
+}
+.eqn{
+    justify-self: center;
+    font-family: sans-serif;
+}
