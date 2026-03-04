@@ -137,3 +137,7 @@ td {
 .imgs{
     justify-self: center;
 }
+.observe{
+    font-size: 0.9rem;
+    left: 0;
+}
