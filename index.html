@@ -12,18 +12,21 @@
     </button>
     <aside class="sidebar" id="sidebar">
         <button class="sidebar-close" id="sidebarClose">✕</button>
-        <h3>Menu</h3>
+        <h3>Context</h3>
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home">Name of the Experiment</a></li>
             <li><a href="#objective">Objective</a></li>
             <li><a href="#equipments">Equipments</a></li>
             <li><a href="#theory">Theory</a></li>
             <li><a href="#circuit-diagram">Circuit Diagram</a></li>
+            <li><a href="#procedure">Procedure</a></li>
+            <li><a href="#data-collection">Data Collection & Observation</a></li>
         </ul>
     </aside>
-    <h1 class="title-head" id="home">Assignment-02</h1>
-    <section class="pos">
-        <h2 class="title-name">
+    <div class="main-container">
+        <h1 class="title-head" id="home">Assignment-02</h1>
+        <section class="pos">
+            <h2 class="title-name">
             <span class="bold">
                 Name of the Experiment:
             </span>
@@ -84,7 +87,7 @@
             </p>
             <br>
             <p class="eqn">
-                <span class="subscript">I<sub>1</sub>+</span><span class="subscript">I<sub>4</sub></span>=<span class="subscript">I<sub>2</sub></span>+
+                <span class="subscript">I<sub>1</sub></span>+<span class="subscript">I<sub>4</sub></span>=<span class="subscript">I<sub>2</sub></span>+
                 <span class="subscript">I<sub>3</sub></span>+<span class="subscript">I<sub>5</sub></span>
                 <br>
                 =>
@@ -121,6 +124,36 @@
                     Fig-4.3: Circuit Diagram - Parallel Circuit (10v)
                 </figcaption>
             </figure>
+        </div>
+        <br>
+        <div class="procedure para-size" id="procedure">
+            <span class="bold">Procedure: </span>
+            <ol type="1">
+                <li>
+                    Use a multimeter to find the exact values of <span class="subscript">R<sub>1</sub>,</span><span class="subscript">R<sub>2</sub></span>
+                    and <span class="subscript">R<sub>3</sub></span>and record them in table.
+                </li>
+                <li>
+                    Connect the circuit as shown in the diagram.
+                </li>
+                <li>
+                    Measure the supply voltage<span class="subscript">V<sub>s</sub></span>and the branch voltage (v).
+                </li>
+                <li>
+                    Set the multimeter to ammeter mode and measure the total current (I) and individual branch currents(<span class="subscript">I<sub>1</sub>,</span>
+                    <span class="subscript">I<sub>2</sub>,</span><span class="subscript">I<sub>3</sub></span>)
+                </li>
+                <li>
+                    Check if the sum of branch currents (<span class="subscript">I<sub>1</sub>+</span><span class="subscript">I<sub>2</sub>+</span>
+                    <span class="subscript">I<sub>3</sub></span>) is approximately equal to the inflow current(I).
+                </li>
+            </ol>
+        </div>
+        <br>
+        <div class="data-collection para-size" id="data-collection">
+            <span class="bold">
+                Data Collection & Observation:
+            </span>
         </div>
     </section>
     <script src="index.js"></script>
