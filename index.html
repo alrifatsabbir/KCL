@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <h1 class="title-head" id="home">Assignment-02</h1>
     <button class="sidebar-btn" id="sidebarToggle">
         |||
     </button>
     <aside class="sidebar" id="sidebar">
         <button class="sidebar-close" id="sidebarClose">✕</button>
-        <h3>Context</h3>
+        <h3>Contents</h3>
         <ul>
             <li><a href="#home">Name of the Experiment</a></li>
             <li><a href="#objective">Objective</a></li>
@@ -21,9 +22,11 @@
             <li><a href="#circuit-diagram">Circuit Diagram</a></li>
             <li><a href="#procedure">Procedure</a></li>
             <li><a href="#data-collection">Data Collection & Observation</a></li>
+            <li><a href="#calculation">Calculation</a></li>
+            <li><a href="#precaution">Precaution</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
         </ul>
     </aside>
-        <h1 class="title-head" id="home">Assignment-02</h1>
         <section class="pos">
             <h2 class="title-name">
             <span class="bold">
@@ -114,11 +117,11 @@
             <span class="bold">Circuit Diagram: </span>
             <br><br>
             <figure class="fig">
-                <img src="./assets/circuit.png" alt="circuit-1" height="300px" width="560px">
+                <img class="circuit1" src="./assets/circuit.png" alt="circuit-1">
                 <figcaption>
                     Fig-4.2: Circuit Diagram - Parallel Circuit (5v)
                 </figcaption>
-                <img src="./assets/circuit2.png" alt="circuit-2" height="300px" width="560px">
+                <img class="circuit2" src="./assets/circuit2.png" alt="circuit-2">
                 <figcaption>
                     Fig-4.3: Circuit Diagram - Parallel Circuit (10v)
                 </figcaption>
@@ -155,79 +158,483 @@
             </span>
             <br>
             <br>
-            <table class="observe">
-                <thead>
-                    <tr>
-                        <th>Observation</th>
-                        <th><span class="subscript">R<sub>1</sub></span>(&Omega;)</th>
-                        <th><span class="subscript">R<sub>2</sub></span>(&Omega;)</th>
-                        <th><span class="subscript">R<sub>3</sub></span>(&Omega;)</th>
-                        <th>R (&Omega;)</th>
-                        <th><span class="subscript">V<sub>s</sub></span>(v)</th>
-                        <th>V(v)</th>
-                        <th>I (mA)</th>
-                        <th><span class="subscript">I<sub>1</sub></span>(mA)</th>
-                        <th><span class="subscript">I<sub>2</sub></span>(mA)</th>
-                        <th><span class="subscript">I<sub>3</sub></span>(mA)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Experimental</td>
-                        <td>328 &Omega;</td>
-                        <td>472 &Omega;</td>
-                        <td>550 &Omega;</td>
-                        <td>143.15&Omega;</td>
-                        <td>5 v</td>
-                        <td>5 v</td>
-                        <td>33mA</td>
-                        <td>15mA</td>
-                        <td>10mA</td>
-                        <td>9mA</td>
-                    </tr>
-                    <tr>
-                        <td>Theoretical</td>
-                        <td>330 &Omega;</td>
-                        <td>470 &Omega;</td>
-                        <td>560 &Omega;</td>
-                        <td>144.02&Omega;</td>
-                        <td>5 v</td>
-                        <td>5 v</td>
-                        <td>34.7mA</td>
-                        <td>15.15mA</td>
-                        <td>10.6mA</td>
-                        <td>8.9mA</td>
-                    </tr>
-                    <tr>
-                        <td>Experimental</td>
-                        <td>328 &Omega;</td>
-                        <td>472 &Omega;</td>
-                        <td>550 &Omega;</td>
-                        <td>143.15&Omega;</td>
-                        <td>10 v</td>
-                        <td>10 v</td>
-                        <td>73mA</td>
-                        <td>31mA</td>
-                        <td>19mA</td>
-                        <td>23mA</td>
-                    </tr>
-                    <tr>
-                        <td>Theoretical</td>
-                        <td>330 &Omega;</td>
-                        <td>470 &Omega;</td>
-                        <td>560 &Omega;</td>
-                        <td>144.02&Omega;</td>
-                        <td>10 v</td>
-                        <td>10 v</td>
-                        <td>69.4mA</td>
-                        <td>30.3mA</td>
-                        <td>21.2mA</td>
-                        <td>17.8mA</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-data">
+                <table class="observe">
+                    <thead>
+                        <tr>
+                            <th>Observation</th>
+                            <th><span class="subscript">R<sub>1</sub></span>(&Omega;)</th>
+                            <th><span class="subscript">R<sub>2</sub></span>(&Omega;)</th>
+                            <th><span class="subscript">R<sub>3</sub></span>(&Omega;)</th>
+                            <th>R (&Omega;)</th>
+                            <th><span class="subscript">V<sub>s</sub></span>(v)</th>
+                            <th>V(v)</th>
+                            <th>I (mA)</th>
+                            <th><span class="subscript">I<sub>1</sub></span>(mA)</th>
+                            <th><span class="subscript">I<sub>2</sub></span>(mA)</th>
+                            <th><span class="subscript">I<sub>3</sub></span>(mA)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Experimental</td>
+                            <td>328 &Omega;</td>
+                            <td>472 &Omega;</td>
+                            <td>550 &Omega;</td>
+                            <td>143.15&Omega;</td>
+                            <td>5 v</td>
+                            <td>5 v</td>
+                            <td>33mA</td>
+                            <td>15mA</td>
+                            <td>10mA</td>
+                            <td>9mA</td>
+                        </tr>
+                        <tr>
+                            <td>Theoretical</td>
+                            <td>330 &Omega;</td>
+                            <td>470 &Omega;</td>
+                            <td>560 &Omega;</td>
+                            <td>144.02&Omega;</td>
+                            <td>5 v</td>
+                            <td>5 v</td>
+                            <td>34.7mA</td>
+                            <td>15.15mA</td>
+                            <td>10.6mA</td>
+                            <td>8.9mA</td>
+                        </tr>
+                        <tr>
+                            <td>Experimental</td>
+                            <td>328 &Omega;</td>
+                            <td>472 &Omega;</td>
+                            <td>550 &Omega;</td>
+                            <td>143.15&Omega;</td>
+                            <td>10 v</td>
+                            <td>10 v</td>
+                            <td>73mA</td>
+                            <td>31mA</td>
+                            <td>19mA</td>
+                            <td>23mA</td>
+                        </tr>
+                        <tr>
+                            <td>Theoretical</td>
+                            <td>330 &Omega;</td>
+                            <td>470 &Omega;</td>
+                            <td>560 &Omega;</td>
+                            <td>144.02&Omega;</td>
+                            <td>10 v</td>
+                            <td>10 v</td>
+                            <td>69.4mA</td>
+                            <td>30.3mA</td>
+                            <td>21.2mA</td>
+                            <td>17.8mA</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="calculation para-size" id="calculation">
+            <span class="bold">
+                Calculation:
+            </span>
+            <p>
+                For 5v find the theoretical values of <span class="subscript">I<sub>1</sub>,</span><span class="subscript">I<sub>2</sub></span>&
+                <span class="subscript">I<sub>3</sub>.</span><br>
+                Given Data,
+                <br>
+                <ul class="eqn2">
+                    <span class="subscript">R<sub>1</sub></span>= 330 &Omega;,<br>
+                    <span class="subscript">R<sub>2</sub></span>= 470 &Omega;,<br>
+                    <span class="subscript">R<sub>3</sub></span>= 560 &Omega;,<br>
+                </ul>
+                <br>
+                <ul class="eqn2">
+                    &there4;
+                    <math class="math">
+                        <mfrac>
+                            <mn>1</mn>
+                            <msub>
+                                <mi>R</mi>
+                                <mn>T</mn>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    =
+                    <math class="math">
+                        <mfrac>
+                            <mn>1</mn>
+                            <msub>
+                                <mi>R</mi>
+                                <mn>1</mn>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    +
+                    <math class="math">
+                        <mfrac>
+                            <mn>1</mn>
+                            <msub>
+                                <mi>R</mi>
+                                <mn>2</mn>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    +
+                    <math class="math">
+                        <mfrac>
+                            <mn>1</mn>
+                            <msub>
+                                <mi>R</mi>
+                                <mn>3</mn>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    <br>
+                    =>
+                    <math class="math">
+                        <mfrac>
+                            <msub>
+                                <mi>R</mi>
+                                <mn>T</mn>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    =
+                    <math class="math">
+                        <mfrac>
+                            <mn>1</mn>
+                            <msub>
+                                <mi>0.0069</mi>
+                            </msub>
+                        </mfrac>
+                    </math><br>
+                    =>
+                    <math class="math">
+                        <mfrac>
+                            <msub>
+                                <mi>R</mi>
+                                <mn>T</mn>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    = 
+                    144.02 &Omega;
+                    <p>
+                        Using Ohm's Law,
+                    </p>
+                    I = 
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                V
+                            </mn>
+                            <msub>
+                                <mi>R</mi>
+                                <mn>T</mn>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    =
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                5v
+                            </mn>
+                            <msub>
+                                <mi>
+                                    144.02 &Omega;
+                                </mi>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    = 0.0347A <tab></tab>
+                    = 34.7mA
+                    <br>
+                    <span class="subscript">I<sub>1</sub></span> =
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                V
+                            </mn>
+                            <msub>
+                                <mi>R</mi>
+                                <mn>1</mn>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    =
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                5v
+                            </mn>
+                            <msub>
+                                <mi>
+                                    330 &Omega;
+                                </mi>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    = 0.01515A <tab></tab>
+                    = 15.15mA
+                    <br>
+                    <span class="subscript">I<sub>2</sub></span> =
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                V
+                            </mn>
+                            <msub>
+                                <mi>R</mi>
+                                <mn>2</mn>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    =
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                5v
+                            </mn>
+                            <msub>
+                                <mi>
+                                    470 &Omega;
+                                </mi>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    = 0.0106A <tab></tab>
+                    = 10.6mA
+                    <br>
+                    <span class="subscript">I<sub>3</sub></span> =
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                V
+                            </mn>
+                            <msub>
+                                <mi>R</mi>
+                                <mn>3</mn>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    =
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                5v
+                            </mn>
+                            <msub>
+                                <mi>
+                                    560 &Omega;
+                                </mi>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    = 0.0089A <tab></tab>
+                    = 8.9mA
+                    <br>
+                </ul>
+                <ul class="eqn2">
+                    <p>For, 10v</p>
+                    I = 
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                V
+                            </mn>
+                            <msub>
+                                <mi>R</mi>
+                                <mn>T</mn>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    =
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                10v
+                            </mn>
+                            <msub>
+                                <mi>
+                                    144.02 &Omega;
+                                </mi>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    = 0.0694A <tab></tab>
+                    = 69.4mA
+                    <br>
+                    <span class="subscript">I<sub>1</sub></span> =
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                V
+                            </mn>
+                            <msub>
+                                <mi>R</mi>
+                                <mn>1</mn>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    =
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                10v
+                            </mn>
+                            <msub>
+                                <mi>
+                                    330 &Omega;
+                                </mi>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    = 0.0303A <tab></tab>
+                    = 30.3mA
+                    <br>
+                    <span class="subscript">I<sub>2</sub></span> =
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                V
+                            </mn>
+                            <msub>
+                                <mi>R</mi>
+                                <mn>2</mn>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    =
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                10v
+                            </mn>
+                            <msub>
+                                <mi>
+                                    470 &Omega;
+                                </mi>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    = 0.0212A <tab></tab>
+                    = 21.2mA
+                    <br>
+                    <span class="subscript">I<sub>3</sub></span> =
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                V
+                            </mn>
+                            <msub>
+                                <mi>R</mi>
+                                <mn>3</mn>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    =
+                    <math class="math">
+                        <mfrac>
+                            <mn>
+                                10v
+                            </mn>
+                            <msub>
+                                <mi>
+                                    560 &Omega;
+                                </mi>
+                            </msub>
+                        </mfrac>
+                    </math>
+                    = 0.0178A <tab></tab>
+                    = 17.8mA
+                    <br>
+                </ul>
+            </p>
+        </div>
+        <br>
+        <div class="precaution para-size" id="precaution">
+            <span class="bold">
+                Precaution:
+            </span>
+            <ol type="1">
+                <li>Put the multimeter in 'ammeter mode' very carefully before measuring current to avoid damaging the fuse.</li>
+                <li>Ensure the ammeter is connected in series with the branch where current is being measured.</li>
+            </ol>
+        </div>
+        <br>
+        <div class="conclusion para-size" id="conclusion">
+            <span class="bold">
+                Conclusion: 
+            </span>
+            <p>
+                The experiment was conducted to verify kirchhoff's Current Law (KCL). After measuring the individual branch currents and the total 
+                current. It was observed that the sum of currents entering the node was approximately equal of the sum of currents leaving the node. 
+                Thus, kirchhoff's Current Law (KCL) was successfully verified.
+            </p>
         </div>
     </section>
+    <section class="right-side">
+        <div class="division">
+            <div class="studentInfo">
+                <h2>Student Info:</h2>
+                <br>
+                <table class="side-table" collapsible>
+                    <tr>
+                        <td class="ul-li">NAME</td>
+                        <td class="ul-li">:</td>
+                        <td class="ul-li">AL RIFAT SABBIR</td>
+                    </tr>
+                    <tr>
+                        <td class="ul-li">ID</td>
+                        <td class="ul-li">:</td>
+                        <td class="ul-li">WUB03/25/69/4555</td>
+                    </tr>
+                    <tr>
+                        <td class="ul-li">ROLL</td>
+                        <td class="ul-li">:</td>
+                        <td class="ul-li">4555</td>
+                    </tr>
+                    <tr>
+                        <td class="ul-li">BATCH</td>
+                        <td class="ul-li">:</td>
+                        <td class="ul-li">69C</td>
+                    </tr>
+                    <tr>
+                        <td class="ul-li">DEPARTMENT</td>
+                        <td class="ul-li">:</td>
+                        <td class="ul-li">Computer Science & Engineering</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="teacherInfo">
+                <h2>Teacher Info:</h2>
+                <br>
+                <p class="teacher">
+                    MD. Sharif Uddin Shajib
+                    <p class="designation">
+                        Lecturer in EEE, <br> World University of Bangladesh
+                    </p>
+                </p>
+            </div>
+            <div class="download">
+                <h2>Download as PDF</h2>
+                <div class="btns">
+                <button class="download-btn" id="download-btn">
+                    &downarrow; Download Output
+                </button>
+                <button class="download-btn" id="download-btn2">
+                    &downarrow; Download Code
+                </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <div class="reserved">
+        All rights reserved by<a href="https://alrifatsabbir.me">@alrifatsabbir</a>&copy; 2026;
+    </div>
     <script src="index.js"></script>
 </body>
 </html>

@@ -5,12 +5,14 @@
     font-family: "Geist", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    scrollbar-width: thin;
+    scrollbar-color:#f7e7ce #102c26;
 }
 body{
-    margin: 20px 0 0 25px;
+    padding: 20px 0 0 25px;
     background-color: #f7e7ce;
     color: #102c26;
-        overflow-x: hidden;
+    overflow-x: hidden;
 }
 .sidebar-btn{
     position: fixed;
@@ -140,4 +142,481 @@ td {
 .observe{
     font-size: 0.9rem;
     left: 0;
+}
+.eqn2{
+    padding-left: 15%;
+}
+.circuit1, .circuit2 {
+    height: auto;
+    width: 100%;
+    max-width: 560px;
+}
+.math{
+    font-size: 1.7rem;
+}
+/* Firefox Support */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 8px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f7e7ce; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #102c26;
+    border-radius: 20px;
+    border: 2px solid #102c26;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #1a4a40; 
+}
+.right-side{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 25dvw;
+    height: 98dvh;
+    background: #102c26;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: -3px 0px 15px #102c26;
+}
+.division{
+    height: 98%;
+    width: 97%;
+    background-color: #f7e7ce;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    box-shadow: inset 2px 0px 50px #102c2655;
+}
+.studentInfo > h2, .teacherInfo > h2, .download > h2{
+    padding-top: 40px;
+}
+.side-table{
+    border: none;
+    position: relative;
+    left: 5px;
+    word-spacing: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.ul-li{
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: left;
+    border: none;
+    align-items: start;
+}
+.teacher{
+    position: relative;
+    left: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.designation{
+    font-size: 1rem;
+    position: relative;
+    left: 25px;
+}
+.download-btn{
+    position: relative;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border: 2px solid transparent;
+    background-color: #102c26;
+    color: #f7e7ce;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+.download-btn:hover{
+    border: 2px solid #102c26;
+    background-color: #f7e7ce;
+    color: #102c26;
+    transform: all 0.4s ease-in-out;
+    -webkit-transform: all 0.4s ease-in-out;
+    -moz-transform: all 0.4s ease-in-out;
+    -ms-transform: all 0.4s ease-in-out;
+    -o-transform: all 0.4s ease-in-out;
+}
+.reserved{
+    text-align: center;
+    opacity: 0.5;
+    font-size: 0.8rem;
+}
+.reserved a{
+    color: #102c26;
+    text-decoration: none;
+}
+
+/* ── Tablet (≤ 1024px) ── */
+@media (max-width: 1024px) {
+    body {
+        padding: 15px 0 0 15px;
+    }
+
+    .pos {
+        width: 88dvw;
+    }
+
+    .right-side {
+        width: 32dvw;
+    }
+
+    table {
+        left: 3%;
+        font-size: 0.88rem;
+    }
+
+    th, td {
+        padding: 6px 8px;
+    }
+
+    .math {
+        font-size: 1.4rem;
+    }
+
+    .eqn2 {
+        padding-left: 8%;
+    }
+}
+
+
+/* ── Mobile (≤ 768px) ── */
+@media (max-width: 768px) {
+    body {
+        padding: 10px 10px 20px 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .right-side {
+        position: relative;
+        order: -1;
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        margin: 0 0 20px 0;
+        box-shadow: 0 4px 15px #102c2666;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .division {
+        width: 100%;
+        border-radius: 16px;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        -ms-border-radius: 16px;
+        -o-border-radius: 16px;
+        padding: 16px 12px 24px 12px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .studentInfo > h2,
+    .teacherInfo > h2,
+    .download > h2 {
+        padding-top: 10px;
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+
+    .side-table {
+        font-size: 0.8rem;
+        left: 0;
+    }
+
+    .ul-li {
+        font-size: 0.78rem;
+    }
+
+    .teacher {
+        left: 6px;
+        font-size: 0.95rem;
+    }
+
+    .designation {
+        left: 6px;
+        font-size: 0.85rem;
+    }
+
+    /* ── main content ── */
+    .pos {
+        width: 100%;
+        order: 0;
+    }
+
+    /* ── sidebar ── */
+    .sidebar-btn {
+        padding: 14px 10px;
+        right: 10px;
+        top: 10px;
+    }
+
+    .sidebar {
+        width: 82vw;
+        right: -86vw;
+    }
+
+    .sidebar h3 {
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 14px;
+    }
+
+    .sidebar ul li a {
+        font-size: 15px;
+    }
+
+    /* ── typography ── */
+    .para-size {
+        font-size: 13px;
+    }
+
+    .math {
+        font-size: 1.1rem;
+    }
+
+    .observe {
+        font-size: 0.78rem;
+    }
+
+    /* ── tables: scale down to fit, no overflow ── */
+    table {
+        left: 0;
+        width: 100%;
+        font-size: 0.7rem;
+        table-layout: fixed;
+        word-break: break-word;
+    }
+
+    th, td {
+        padding: 5px 5px;
+    }
+
+    /* ── equations / figures ── */
+    .eqn2 {
+        padding-left: 2%;
+    }
+
+    .eqn, .fig {
+        width: 100%;
+    }
+
+    .imgs img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* ── download button ── */
+    .download-btn {
+        width: 90%;
+        padding: 9px 12px;
+        font-size: 0.85rem;
+    }
+}
+
+
+/* ── Small Mobile (≤ 480px) ── */
+@media (max-width: 480px) {
+    body {
+        padding: 6px 6px 16px 6px;
+    }
+
+    .division {
+        flex-direction: column;
+        padding: 12px 10px 18px 10px;
+    }
+
+    .studentInfo,
+    .teacherInfo,
+    .download {
+        flex: 1 1 100%;
+    }
+
+    .studentInfo > h2,
+    .teacherInfo > h2,
+    .download > h2 {
+        font-size: 0.95rem;
+        padding-top: 8px;
+    }
+
+    .sidebar {
+        width: 90vw;
+        right: -94vw;
+    }
+
+    .sidebar h3 {
+        font-size: 17px;
+    }
+
+    .sidebar ul li a {
+        font-size: 13px;
+    }
+
+    .para-size {
+        font-size: 12px;
+    }
+
+    .math {
+        font-size: 0.95rem;
+    }
+
+    table {
+        font-size: 0.62rem;
+    }
+
+    th, td {
+        padding: 4px 4px;
+    }
+
+    .teacher {
+        font-size: 0.85rem;
+        left: 4px;
+    }
+
+    .designation {
+        font-size: 0.78rem;
+        left: 4px;
+    }
+
+    .side-table {
+        font-size: 0.72rem;
+    }
+
+    .ul-li {
+        font-size: 0.7rem;
+    }
+
+    .download-btn {
+        width: 95%;
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 1024px) {
+    .circuit1, .circuit2 { max-width: 420px; }
+}
+
+@media (max-width: 768px) {
+    .circuit1, .circuit2 { max-width: 340px; }
+}
+
+@media (max-width: 480px) {
+    .circuit1, .circuit2 { max-width: 260px; }
+}
+@media print {
+    * {
+        color: #000 !important;
+        background: #fff !important;
+        box-shadow: none !important;
+        scrollbar-width: none !important;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+        display: block;
+        background: #fff !important;
+        color: #000 !important;
+        font-size: 11pt;
+        width: 210mm;
+    }
+
+    /* ── sidebar & toggle hidden on print ── */
+    .sidebar,
+    .sidebar-btn,
+    .sidebar-close,
+    .download-btn {
+        display: none !important;
+    }
+
+    .right-side, .teacherInfo, .download {
+        display: none;
+    }
+    /* ── main content ── */
+    .pos {
+        width: 100% !important;
+    }
+
+    /* ── tables ── */
+    table {
+        left: 0 !important;
+        width: 100% !important;
+        font-size: 9pt !important;
+        border: 1.5px solid #000 !important;
+        table-layout: fixed !important;
+        word-break: break-word !important;
+        page-break-inside: auto;
+    }
+
+    th, td {
+        border: 1px solid #000 !important;
+        padding: 5px 6px !important;
+        font-size: 9pt !important;
+    }
+
+    tr {
+        page-break-inside: avoid;
+    }
+
+    /* ── typography ── */
+    .para-size {
+        font-size: 10pt !important;
+    }
+
+    .math {
+        font-size: 13pt !important;
+    }
+
+    .observe {
+        font-size: 8.5pt !important;
+    }
+
+    .bold {
+        color: #000 !important;
+        border-bottom: 2px double #000 !important;
+    }
+
+    /* ── equations / figures ── */
+    .eqn2 {
+        padding-left: 10% !important;
+    }
+
+    .eqn, .fig {
+        page-break-inside: avoid;
+    }
+
+    .imgs img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* ── page setup ── */
+    @page {
+        size: A4 portrait;
+        margin: 15mm 12mm 15mm 12mm;
+    }
 }
