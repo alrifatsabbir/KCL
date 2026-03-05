@@ -57,14 +57,15 @@ downloadBtn.addEventListener('click', () => {
     window.print();
 });
 
-
 const downloadBtn2 = document.getElementById('download-btn2');
 downloadBtn2.addEventListener('click', async () => {
     try {
-        const cssResponse = await fetch('index.css');
+        const base = window.location.href.replace(/\/[^\/]*$/, '/');
+
+        const cssResponse = await fetch(base + 'index.css');
         const cssText = await cssResponse.text();
         
-        const jsResponse = await fetch('index.js');
+        const jsResponse = await fetch(base + 'index.js');
         const jsText = await jsResponse.text();
         
         const htmlText = document.documentElement.outerHTML;
@@ -107,6 +108,6 @@ downloadBtn2.addEventListener('click', async () => {
 
     } catch (error) {
         console.error("Error fetching files:", error);
-        alert("Could not fetch code files. Make sure you're running on a local server (not file://).");
+        alert("File fetch করা যায়নি: " + error.message);
     }
 });
